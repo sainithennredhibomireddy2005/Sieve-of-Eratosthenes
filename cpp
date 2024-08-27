@@ -9,14 +9,14 @@ int main(){
     a[0] = 0; a[1] = 0;
     for(int i=2; i<=sqrt(n); i++){
         if(a[i] == 1){
-            for (int i=i*i; j<=n; j+=i){
+            for (int j=i*i; j<=n; j+=i){
                 a[j]=0;
             }
         }
     }
     long long int sum =0;
     int c=0;
-    for(int 1=2; i<n; i++)
+    for(int i=2; i<n; i++)
         if (a[i] == 1){
             c++;
             sum+=i;
